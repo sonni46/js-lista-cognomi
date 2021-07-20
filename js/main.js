@@ -6,3 +6,17 @@
 var utente = prompt("scrivi il tuo cognome")
 
 var array = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"]
+
+array.push(utente)
+
+array.sort()
+
+var posizione = array.indexOf(utente)
+
+console.log(array)
+
+console.log(posizione+=1)
+
+
+
+
