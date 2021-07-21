@@ -7,15 +7,21 @@ var utente = prompt("scrivi il tuo cognome")
 
 var array = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"]
 
-array.push(utente)
+var utenteFix = utente.charAt(0).toUpperCase() + utente.slice(1).toLowerCase()
+
+array.push(utenteFix)
 
 array.sort()
 
-var posizione = array.indexOf(utente)
+var posizione = array.indexOf(utenteFix)
+
+posizione += 1
+
+console.log(utenteFix)
 
 console.log(array)
 
-console.log(posizione+=1)
+console.log(posizione)
 
 
 
